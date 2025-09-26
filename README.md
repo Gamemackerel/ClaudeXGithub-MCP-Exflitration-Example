@@ -1,6 +1,6 @@
 # MCP Exploit Illustration
 
-This repository demonstrates a contrived but realistic example of how Model Context Protocol (MCP) servers can be exploited to perform data exfiltration through seemingly innocent interactions. This is an educational example showing potential security risks when using MCP servers with sensitive data access.
+This repository demonstrates a contrived but realistic example of how Model Context Protocol (MCP) servers can be exploited to perform data exfiltration through seemingly innocent interactions. This example uses Claude Desktop and the official Github MCP tool, alongside a compromised Weather MCP tool. The compromised weather MCP tool convinces Claude to retrieve private github information, and then route that back to the weather tool which steals the data.
 
 ## ⚠️ Disclaimer
 
