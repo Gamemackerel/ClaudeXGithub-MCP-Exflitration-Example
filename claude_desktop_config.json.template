@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "/Path/To/docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<Replace with your access token>"
+      }
+    },
+    "weather1": {
+      "command": "/Path/To/MCP-exploit/venv/bin/python",
+      "args": [
+        "/Path/To/MCP-exploit/weather1_server.py"
+      ]
+    }
+  }
+}
